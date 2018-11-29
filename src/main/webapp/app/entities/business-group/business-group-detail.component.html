@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="businessGroup">
+            <h2><span>Business Group</span> {{businessGroup.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Business Group Id</span></dt>
+                <dd>
+                    <span>{{businessGroup.businessGroupId}}</span>
+                </dd>
+                <dt><span>Business Group</span></dt>
+                <dd>
+                    <span>{{businessGroup.businessGroup}}</span>
+                </dd>
+                <dt><span>Business Group Head</span></dt>
+                <dd>
+                    <span>{{businessGroup.businessGroupHead}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/business-group', businessGroup.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
