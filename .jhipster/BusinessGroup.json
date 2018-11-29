@@ -1,0 +1,27 @@
+{
+    "name": "BusinessGroup",
+    "fields": [
+        {
+            "fieldName": "businessGroupId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "businessGroup",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessGroupHead",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181129054240",
+    "entityTableName": "business_group",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
