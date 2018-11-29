@@ -1,0 +1,7 @@
+entity BusinessGroup
+{
+businessGroupId Long,
+businessGroup String,
+businessGroupHead String
+
+}
